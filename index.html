@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI & Tech Learning Maps</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: #f7f8fa;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 70px 24px;
+        }
+
+        /* Header */
+
+        .header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .header h1 {
+            margin: 0 0 14px;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 18px;
+            color: #6b7280;
+        }
+
+        /* Cards */
+
+        .maps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            display: block;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 30px;
+
+            text-decoration: none;
+            color: inherit;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d1d5db;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .icon {
+            width: 54px;
+            height: 54px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+            background: #f3f4f6;
+
+            font-size: 28px;
+
+            margin-bottom: 22px;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+
+            font-size: 21px;
+            line-height: 1.3;
+            font-weight: 650;
+        }
+
+        .card p {
+            margin: 0 0 22px;
+
+            color: #6b7280;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .open {
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        /* Footer */
+
+        .footer {
+            text-align: center;
+            margin-top: 55px;
+
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* Tablet */
+
+        @media (max-width: 900px) {
+            .maps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 45px 18px;
+            }
+
+            .maps {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                margin-bottom: 35px;
+            }
+
+            .header h1 {
+                font-size: 31px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+
+        <header class="header">
+            <h1>AI &amp; Tech Learning Maps</h1>
+
+            <p>
+                Interactive visual maps for exploring technology concepts
+            </p>
+        </header>
+
+
+        <!-- Learning Maps -->
+
+        <section class="maps">
+
+            <!-- Statistics -->
+
+            <a
+                class="card"
+                href="Statistics_for_Data_Science_Map.html"
+            >
+                <div class="icon">📊</div>
+
+                <h2>Statistics for Data Science</h2>
+
+                <p>
+                    Explore the key statistical concepts used in
+                    data science and machine learning.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+
+            <!-- GenAI -->
+
+            <a
+                class="card"
+                href="GenAI_Evolution_Map.html"
+            >
+                <div class="icon">✨</div>
+
+                <h2>GenAI Evolution</h2>
+
+                <p>
+                    Explore the evolution of generative AI,
+                    from early models to modern large language models.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+
+            <!-- Cloud -->
+
+            <a
+                class="card"
+                href="Cloud_Services_Map.html"
+            >
+                <div class="icon">☁️</div>
+
+                <h2>Cloud Services</h2>
+
+                <p>
+                    Navigate the major concepts and services
+                    across modern cloud platforms.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+
+            <!-- Machine Learning -->
+
+            <a
+                class="card"
+                href="Machine_Learning_Map.html"
+            >
+                <div class="icon">🧠</div>
+
+                <h2>Machine Learning</h2>
+
+                <p>
+                    Explore machine learning concepts,
+                    algorithms, workflows and techniques.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+
+            <!-- Deep Learning -->
+
+            <a
+                class="card"
+                href="Deep_Learning_Map.html"
+            >
+                <div class="icon">🔬</div>
+
+                <h2>Deep Learning</h2>
+
+                <p>
+                    Explore neural networks, architectures,
+                    training techniques and deep learning concepts.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+
+            <!-- System Design -->
+
+            <a
+                class="card"
+                href="System_Design_Terms_Map.html"
+            >
+                <div class="icon">⚙️</div>
+
+                <h2>System Design Terms</h2>
+
+                <p>
+                    Explore important system design and
+                    distributed systems terminology.
+                </p>
+
+                <div class="open">
+                    Explore Map →
+                </div>
+            </a>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            AI &amp; Tech Learning Maps
+        </footer>
+
+    </main>
+
+</body>
+</html>
